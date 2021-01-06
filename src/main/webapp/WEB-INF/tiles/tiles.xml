@@ -3,7 +3,7 @@
 <tiles-definitions>
 
 	<!-- 홈페이지 -->
-	<definition name="page" template="/WEB-INF/tiles/page_template.jsp">
+	<definition name="page" template="/WEB-INF/tiles/home_template.jsp">
 		<put-attribute name="header" value="/WEB-INF/views/include/home_header.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/include/home_footer.jsp" />
 	</definition>

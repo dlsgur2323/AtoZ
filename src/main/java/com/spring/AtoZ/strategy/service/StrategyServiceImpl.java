@@ -1,5 +1,10 @@
 package com.spring.AtoZ.strategy.service;
 
-public class StrategyServiceImpl implements StrategyService {
+import com.spring.AtoZ.strategy.dao.StrategyDAO;
 
+public class StrategyServiceImpl implements StrategyService {
+	private StrategyDAO strategyDAO;
+	public void setStrategyDAO(StrategyDAO strategyDAO) {
+		this.strategyDAO = strategyDAO;
+	}
 }

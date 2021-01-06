@@ -14,7 +14,6 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
 
-import kr.or.ddit.dto.MemberVO;
 
 public class LoginFailureHandler extends SimpleUrlAuthenticationFailureHandler{
 	

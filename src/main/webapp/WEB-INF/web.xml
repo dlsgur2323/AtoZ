@@ -14,10 +14,10 @@
 		</listener-class>
 	</listener>
 	<!-- security listener -->
-	<listener>
-		<listener-class>org.springframework.security.web.session.HttpSessionEventPublisher
-		</listener-class>
-	</listener>
+<!-- 	<listener> -->
+<!-- 		<listener-class>org.springframework.security.web.session.HttpSessionEventPublisher -->
+<!-- 		</listener-class> -->
+<!-- 	</listener> -->
 
 	<!-- spring encoding filter -->
 	<filter>
@@ -38,16 +38,16 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
-	<filter>
-		<filter-name>springSecurityFilterChain</filter-name>
-		<filter-class>
-			org.springframework.web.filter.DelegatingFilterProxy
-		</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>springSecurityFilterChain</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
+<!-- 	<filter> -->
+<!-- 		<filter-name>springSecurityFilterChain</filter-name> -->
+<!-- 		<filter-class> -->
+<!-- 			org.springframework.web.filter.DelegatingFilterProxy -->
+<!-- 		</filter-class> -->
+<!-- 	</filter> -->
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>springSecurityFilterChain</filter-name> -->
+<!-- 		<url-pattern>/*</url-pattern> -->
+<!-- 	</filter-mapping> -->
 	
 	<!-- Processes application requests -->
 	<servlet>
@@ -65,4 +65,5 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
 </web-app>

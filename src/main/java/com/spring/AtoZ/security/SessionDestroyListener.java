@@ -7,7 +7,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.session.SessionDestroyedEvent;
 
-import kr.or.ddit.dto.MemberVO;
+import com.spring.AtoZ.vo.MemberVO;
+
 
 public class SessionDestroyListener implements ApplicationListener<SessionDestroyedEvent>{
 	@Override

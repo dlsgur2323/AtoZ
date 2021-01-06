@@ -1,5 +1,10 @@
 package com.spring.AtoZ.strategy.dao;
 
-public class StrategyDAOImpl implements StrategyDAO {
+import org.apache.ibatis.session.SqlSession;
 
+public class StrategyDAOImpl implements StrategyDAO {
+	private SqlSession sqlSession;
+	public void setSqlSession(SqlSession sqlSession) { 
+		this.sqlSession = sqlSession;
+	}
 }

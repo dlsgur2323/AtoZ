@@ -1,5 +1,10 @@
 package com.spring.AtoZ.release.dao;
 
-public class ReleaseDAOImpl implements ReleaseDAO {
+import org.apache.ibatis.session.SqlSession;
 
+public class ReleaseDAOImpl implements ReleaseDAO {
+	private SqlSession sqlSession;
+	public void setSqlSession(SqlSession sqlSession) { 
+		this.sqlSession = sqlSession;
+	}
 }

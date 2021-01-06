@@ -1,5 +1,10 @@
 package com.spring.AtoZ.payment.service;
 
-public class PaymentServiceImpl implements PaymentService {
+import com.spring.AtoZ.payment.dao.PaymentDAO;
 
+public class PaymentServiceImpl implements PaymentService {
+	private PaymentDAO paymentDAO;
+	public void setPaymentDAO(PaymentDAO paymentDAO) {
+		this.paymentDAO = paymentDAO;
+	}
 }

@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.spring.3team">
+	<logger name="com.spring.AtoZ">
 		<level value="info" />
 	</logger>
 	

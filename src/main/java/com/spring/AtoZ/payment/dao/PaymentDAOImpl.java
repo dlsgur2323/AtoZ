@@ -1,5 +1,10 @@
 package com.spring.AtoZ.payment.dao;
 
-public class PaymentDAOImpl implements PaymentDAO {
+import org.apache.ibatis.session.SqlSession;
 
-}
+public class PaymentDAOImpl implements PaymentDAO {
+	private SqlSession sqlSession;
+	public void setSqlSession(SqlSession sqlSession) { 
+		this.sqlSession = sqlSession;
+	}
+}	

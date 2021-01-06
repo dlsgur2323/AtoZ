@@ -1,5 +1,10 @@
 package com.spring.AtoZ.employee.service;
 
-public class EmployeeServiceImpl implements EmployeeService{
+import com.spring.AtoZ.employee.dao.EmployeeDAO;
 
+public class EmployeeServiceImpl implements EmployeeService{
+	private EmployeeDAO employeeDAO;
+	public void setEmployeeDAO(EmployeeDAO employeeDAO) {
+		this.employeeDAO = employeeDAO;
+	}
 }
